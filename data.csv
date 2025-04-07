@@ -47,7 +47,7 @@ To avoid non-maintenance charges, you need to meet any of the following criteria
 If the AMB is not maintained, a fee of up to ?200 plus 18% GST will be charged.
 
 Use the following link to check if you've met the balance requirements or to see how much needs to be deposited to avoid AMB charges: https://app.jupiter.money/pro/mab-track",Chat Scripts,Email Scripts,Voice Scripts,https://sites.google.com/jupiter.money/jupiter-gurucool,PCIR,Freshdesk Properties
-AMB_05,"I'm unable to maintain the required Annual Monthly Balance (eg ""AMB"", ""Amb"", ""amb"") due to a lack of income. What are my options?","If you are eligible for the Annual Monthly Balance (AMB):
+ETHOS and ONUS,"I'm unable to maintain the required Annual Monthly Balance (eg ""AMB"", ""Amb"", ""amb"") due to a lack of income. What are my options?","If you are eligible for the Annual Monthly Balance (AMB):
 
 To avoid non-maintenance charges, you need to meet any of the following criteria:
 
@@ -686,3 +686,26 @@ DC_127,Can I upgrade from a virtual to a Jupiter Debit cum ATM Card?,"Yes! You c
 To upgrade, navigate to the 'Card' tab ->Settings -> Select 'Order a Physical Debit Card'
 
 Upgrade to physical debit card: https://app.jupiter.money/cards?cardType=debit-card",Chat Scripts,Email Scripts,Voice Scripts,https://sites.google.com/jupiter.money/jupiter-gurucool,PCIR,Freshdesk Properties
+BT_01,A/c Status = FKYC/ HKYC(With enough limit)  / Txn Attempted on Jupiter App / Txn Status: Success / Type: IMPS/ NEFT/ RTGS/ IFT,Check if  TAT is crossed from the date of txn?   (IMPS / RTGS : Check if it is 1 WD from the date of Transaction (T+1WD)NEFT :  Check if is 24 hours from the time of transaction). Check if its within TAT or Outside TAT?,,,,https://sites.google.com/d/1uSWExRXVrUDzsefV9DCcQRKsVLyLKmTC/p/1NUUBYRdw6apPNokZ_WzSYPLB7LLUFRkq/edit,"Child Ticket Creation:
+A. Subject: Mention as per the issue
+B. Service Type: Issue
+C. Source: Banking
+D. Group: Jupiter - Banking
+E. Agent: Blank
+F. Description:
+    1. A/c No. of Jupiter user    2. CRN No.            3. Bank Transaction Reference No.:    4. Amount:            5. Date and time of transaction:            6. Issue description:G. Priority: Do not edit   
+
+New Tagging
+Service Type: Issue
+Product-Category: BT - Outgoing txn 
+Issue: NEFT/RTGS - txn failed / IMPS txn failed     
+Resolution: L2C: IMPS txn failed issue / L2C: NEFT/RTGS - txn failed issue  
+Status: Open",
+,,"Within TAT: Request the cx to wait as per the TAT and the amount will be successfully credited into the beneficiaries A/c. Share the Bank reference number for reference.
+WHY -SOP : There could be delay in confirming the credit due to certain lag or server issue at the beneficiary bank who would have to confirm the transaction. For NEFT transactions, as the transactions are processed in batches from the bank’s end, it can take a while for the same to reflect into the beneficiary's account.",/BT_Outgoing_AmountDebited_TransactionSuccess_TATnotcrossed_InformCx,,,,Product-Category: BT - Outgoing txn ,
+,,"Post the expected TAT :As the transaction is successful from our end, share the Bank reference number and request the customer to check with the beneficiary. If the amount is not credited, request to share the bank statement of the beneficiary  from the date of transaction until the date of complaint for us to take this forward. ",/BT_Outgoing_AmountDebited_TransactionSuccess_TATcrossed_AskforStatment,,,,Issue: NEFT/RTGS - txn failed / IMPS txn failed     ,
+,,"Bank statement available : 
+Inform about issue escalation & provide a TAT as below for us to revert with an update.
+NEFT & RTGS : 2 WD
+IMPS/ IFT : 15 WD",/BT_Outgoing_AmountDebited_TransactionSuccess_TATcrossed_ChildTicket,,,,Resolution: L2C: IMPS txn failed issue / L2C: NEFT/RTGS - txn failed issue  ,
+,,,,,,,Status: Open,
