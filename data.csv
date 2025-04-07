@@ -701,10 +701,10 @@ Product-Category: BT - Outgoing txn
 Issue: NEFT/RTGS - txn failed / IMPS txn failed     
 Resolution: L2C: IMPS txn failed issue / L2C: NEFT/RTGS - txn failed issue  
 Status: Open",
-,,"Within TAT: Request the cx to wait as per the TAT and the amount will be successfully credited into the beneficiaries A/c. Share the Bank reference number for reference.
+BT_02,Within TAT,"Within TAT: Request the cx to wait as per the TAT and the amount will be successfully credited into the beneficiaries A/c. Share the Bank reference number for reference.
 WHY -SOP : There could be delay in confirming the credit due to certain lag or server issue at the beneficiary bank who would have to confirm the transaction. For NEFT transactions, as the transactions are processed in batches from the bank’s end, it can take a while for the same to reflect into the beneficiary's account.",/BT_Outgoing_AmountDebited_TransactionSuccess_TATnotcrossed_InformCx,,,,Product-Category: BT - Outgoing txn ,
-,,"Post the expected TAT :As the transaction is successful from our end, share the Bank reference number and request the customer to check with the beneficiary. If the amount is not credited, request to share the bank statement of the beneficiary  from the date of transaction until the date of complaint for us to take this forward. ",/BT_Outgoing_AmountDebited_TransactionSuccess_TATcrossed_AskforStatment,,,,Issue: NEFT/RTGS - txn failed / IMPS txn failed     ,
-,,"Bank statement available : 
+BT_03,Outside TAT,"Post the expected TAT :As the transaction is successful from our end, share the Bank reference number and request the customer to check with the beneficiary. If the amount is not credited, request to share the bank statement of the beneficiary  from the date of transaction until the date of complaint for us to take this forward. ",/BT_Outgoing_AmountDebited_TransactionSuccess_TATcrossed_AskforStatment,,,,Issue: NEFT/RTGS - txn failed / IMPS txn failed     ,
+BT_04,Bank statement available,"Bank statement available : 
 Inform about issue escalation & provide a TAT as below for us to revert with an update.
 NEFT & RTGS : 2 WD
 IMPS/ IFT : 15 WD",/BT_Outgoing_AmountDebited_TransactionSuccess_TATcrossed_ChildTicket,,,,Resolution: L2C: IMPS txn failed issue / L2C: NEFT/RTGS - txn failed issue  ,
