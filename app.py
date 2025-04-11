@@ -61,7 +61,7 @@ if user_input and not st.session_state.selected_question:
         score = fuzz.partial_ratio(user_input.lower(), str(row["Question"]).lower())
         matches.append((row["Question"], score))
 
-    top_matches = sorted(matches, key=lambda x: x[1], reverse=True)[:5]
+    top_matches = sorted(matches, key=lambda x: x[1], reverse=True)[:10]
 
     if top_matches and top_matches[0][1] > 50:
         st.info("Did you mean one of these?")
